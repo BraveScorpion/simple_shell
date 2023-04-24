@@ -58,7 +58,7 @@ void print_str(char *str, int new_line)
 		write(STDOUT_FILENO, "\n", 1);
 }
 /**
- * _write_char - Prints a char to STDOUT
+ * _putchar - Prints a char to STDOUT
  * @c: Character to print
  * Return: 1
  */
