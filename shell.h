@@ -3,7 +3,7 @@
 
 #include <stdarg.h>
 #include <signal.h>
-#define PROMPT "# "
+#define PROMPT "#shell$ "
 #include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
