@@ -1,8 +1,8 @@
 #include "shell.h"
 /**
- * _getenv - gets an environment variable
- * @name: environment variable to get
- * Return: pointer to environment variable or NULL if there is no match
+ * _getenv - Pulls an enviroment
+ * @name: env to be aquired
+ * Return: String of the envireonmet
  */
 char *_getenv(const char *name)
 {
