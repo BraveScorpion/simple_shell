@@ -1,9 +1,9 @@
 #include "shell.h"
 /**
-**builtin_execute - executes the built in functions
-**@tokens: arguments being passed
-**Return: tokens
-**/
+* builtin_execute - Selects which builtin is appropriate
+* @tokens: User input
+* Return: Parsed input
+*/
 int builtin_execute(char **tokens)
 {
 	int status;
@@ -35,10 +35,10 @@ int builtin_execute(char **tokens)
 }
 
 /**
-**shell_num_builtins - this check num built-ins
-**@builtin: takes the builtin to be counted
-**Return: num of built-ins
-**/
+* shell_num_builtins - determines hoow many build in exist
+* @builtin: reciever
+* Return: possible options
+*/
 
 int shell_num_builtins(built_s builtin[])
 {

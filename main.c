@@ -1,7 +1,7 @@
 #include "shell.h"
 /**
- * main - main loop of shell
- * Return: 0 on success
+ * main - Prompts for input
+ * Return: 0
  */
 int main(void)
 {

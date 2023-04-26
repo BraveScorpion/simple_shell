@@ -1,8 +1,8 @@
 #include "shell.h"
 /**
-**shell_exit - exits the shell
-**Return: void
-**/
+* shell_exit - Similar functionality to exit command
+* Return: Nothing
+*/
 
 	int shell_exit(void)
 	{
@@ -11,20 +11,20 @@
 
 
 /**
-**shell_env - prints environment
-**Return: void
-**/
+* shell_env - prints environment
+* Return: none
+*/
 
-	int shell_env(void)
+int shell_env(void)
+{
+	unsigned int i;
+
+	i = 0;
+	while (environ[i] != NULL)
 	{
-		unsigned int i;
-
-		i = 0;
-		while (environ[i] != NULL)
-		{
-			write(STDOUT_FILENO, environ[i], _strlen(environ[i]));
-			write(STDOUT_FILENO, "\n", 1);
-			i++;
-		}
-		return (0);
+		write(STDOUT_FILENO, environ[i], _strlen(environ[i]));
+		write(STDOUT_FILENO, "\n", 1);
+		i++;
 	}
+	return (0);
+}

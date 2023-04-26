@@ -1,10 +1,10 @@
 #include "shell.h"
 /**
- * _which - searches directories in PATH variable for command
- * @command: to search for
- * @fullpath: full path of command to execute
- * @path: full PATH variable
- * Return: pointer to full_path
+ * _which - Finds directories
+ * @command: command from user
+ * @fullpath: path for excution
+ * @path: command path
+ * Return: Complete string
  */
 char *_which(char *command, char *fullpath, char *path)
 {
@@ -20,7 +20,7 @@ char *_which(char *command, char *fullpath, char *path)
 		return (NULL);
 	}
 	_strcpy(path_copy, path);
-	/* copy PATH directory + command name and check if it exists */
+	/*second section*/
 	token = strtok(path_copy, ":");
 	if (token == NULL)
 		token = strtok(NULL, ":");
